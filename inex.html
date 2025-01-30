@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Food</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- DaisyUI + Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.2/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+      <style>
+        .font-sora{
+            font-family: "Sora", serif;
+        }
+      </style>
+      <!-- tailwindcss -->
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'fresh-primary': '#179800',
+                'fresh-primary-bg': 'rgba(231, 111, 81, 0.10)',
+              },
+            },
+          },
+        }
+      </script>
+ </head>
+  <body class="font-sora">
+    <!-- Header section -->
+     <header class="bg-linear-to-r from-white-100 to-cream-white-500">
+        <!-- navbar -->
+        <header class="md:container mx-auto">
+            <nav>
+              <div class="navbar bg-base-100 shadow-sm">
+                  <div class="flex-1 ga">
+                    <div class="dropdown">
+                      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                      </div>
+                      <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a>Product</a></li>
+                        <li><a>Service</a></li>
+                        <li><a>Contact Us</a></li>
+                        
+                      </ul>
+                    </div>
+                   <img src="images/logo-header.png" alt="">
+                  </div>
+                  <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Product</a></li>
+                        <li><a>Service</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                    
+                  </div>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <div class="gap-24">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a class="btn">Login</a>
+                    <a class="btn bg-fresh-primary text-white">Register</a>
+                  </div>
+                </nav>
+     </header>
+     <!-- main section -->
+      <main>
+        <div class="hero bg-base-200 min-h-screen bg-linear-to-r from-cyan-500 to-blue-500">
+          <div class="text-center">
+            <div class="max-w-md">
+              <h2 class="text-3xl font-semibold text-center mb-12">Freshness <span class="text-fresh-primary">You Can <br>Count</span> On,Prices You’ll Love!</h2>
+            <p class="text-black-100">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+            <img class="" src="images/hero-vegetables.png" alt="">
+            </div>
+          </div>
+        </div>
+            <!-- Service -->
+            <div class="container mx-auto">
+              <h2 class="text-3xl font-bold text-green-600 mb-6">Services</h2>
+              <div class="grid md:grid-cols-3 gap-6">
+                  <!-- 24/7 Services -->
+                  <div class="card  p-6 shadow-lg rounded-lg">
+                      <figure><img src="images/service.png" alt="24/7 Service"></figure>
+                      <div class="card-body">
+                          <h3 class="text-xl font-bold">24/7 Services</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                      </div>
+                  </div>
+                  <!-- Fast Delivery -->
+                  <div class="card bg-base-200 p-6 shadow-lg rounded-lg">
+                      <figure><img src="images/delivery.png" alt="Fast Delivery"></figure>
+                      <div class="card-body">
+                          <h3 class="text-xl font-bold">Fast Delivery</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                      </div>
+                  </div>
+                  <!-- Healthy Products -->
+                  <div class="card bg-base-200 p-6 shadow-lg rounded-lg">
+                      <figure><img src="images/healthy.png" alt="Healthy Products"></figure>
+                      <div class="card-body">
+                          <h3 class="text-xl font-bold">Healthy Products</h3>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </main>
+
+       <!-- Arrival & Offers Section -->
+       <h2 class="text-3xl font-bold text-green-600 mt-10 mb-6">Arrival & Offers</h2>
+       <div class="grid md:grid-cols-3 gap-6">
+           <!-- Daawat Offer (Bigger Box) -->
+           <div class="card bg-green-900 text-white p-10 shadow-lg rounded-lg flex flex-row items-center justify-between md:col-span-2">
+               <div class="text-left">
+                   <img src="images/dawat-logo.png" alt="Daawat Logo" class="mb-4 w-32">
+                   <h3 class="text-2xl font-bold">Daawat The Finest</h3>
+                   <button class="btn btn-active btn-success text-lg px-6 py-2 mt-2">Cook Exotic Dishes</button>
+                   <p class="mt-2 text-xl">UP TO <span class="font-bold">20% OFF</span></p>
+               </div>
+               <img src="images/dawat-mock-up.png" alt="Daawat Biryani Rice" class="ml-4 w-48">
+           </div>
+           <!-- India Gate Offer (Smaller Box) -->
+           <div class="card bg-blue-900 text-white p-6 shadow-lg rounded-lg flex flex-row items-center justify-between md:col-span-1">
+               <div class="text-left">
+                   <img src="images/india-gate-logo.png" alt="India Gate Logo" class="mb-4 w-24">
+                   <h3 class="text-lg font-bold">India Gate</h3>
+                   <button class="btn btn-active btn-primary text-base px-4 py-1 mt-2">World’s No.1 Rice</button>
+                   <p class="mt-2 text-lg">UP TO <span class="font-bold">40% OFF</span></p>
+               </div>
+               <img src="images/india-gate-mock-up.png" alt="India Gate Rice" class="ml-4 w-36">
+           </div>
+       </div>
+   </div>
+      <!-- footer Section -->
+       <footer>
+        <footer class="footer sm:footer-horizontal bg-green-500 text-base-content p-10">
+          <nav>
+            <img src="images/logo-footer.png" alt="">
+            <p class="text-white">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br>
+               friends</p>
+          </nav>
+          <nav class="text-white">
+            <a class="link link-hover">Product</a>
+            <a class="link link-hover">Service</a>
+            <a class="link link-hover">Contact Us</a>
+            
+          </nav>
+          <nav>
+            <h6 class="text-xl  text-white">Follow us</h6>
+            <div class="grid grid-flow-col gap-24">
+              <a>
+                <i class="fa-brands fa-facebook text-white text-5xl"></i>
+                <i class="fa-brands fa-instagram text-white text-5xl"></i>
+                <i class="fa-brands fa-linkedin text-white text-5xl"></i>
+                <i class="fa-brands fa-youtube text-white text-5xl"></i>
+
+                
+              </a>
+            </div>
+          </nav>
+        </footer>
+       </footer>
+</body>
+</html>
