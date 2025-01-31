@@ -35,7 +35,7 @@
  </head>
   <body class="font-sora">
     <!-- Header section -->
-     <header class="bg-linear-to-r from-white-100 to-cream-white-500">
+     <header class=" bg-linear-to-r from-white-100 to-cream-white-500">
         <!-- navbar -->
         <header class="md:container mx-auto">
             <nav>
@@ -84,8 +84,8 @@
                 </nav>
      </header>
      <!-- main section -->
-      <main>
-        <div class="hero bg-base-200 min-h-screen bg-linear-to-r from-cyan-500 to-blue-500">
+      <main class="">
+        <div class="hero bg-gradient-to-b from-white to-[#EFEBE3] min-h-screen">
           <div class="text-center">
             <div class="max-w-md">
               <h2 class="text-3xl font-semibold text-center mb-12">Freshness <span class="text-fresh-primary">You Can <br>Count</span> On,Prices You’ll Love!</h2>
@@ -99,7 +99,7 @@
               <h2 class="text-3xl font-bold text-green-600 mb-6">Services</h2>
               <div class="grid md:grid-cols-3 gap-6">
                   <!-- 24/7 Services -->
-                  <div class="card  p-6 shadow-lg rounded-lg">
+                  <div class="bg-[#EFEBE3] card  p-6 shadow-lg rounded-lg">
                       <figure><img src="images/service.png" alt="24/7 Service"></figure>
                       <div class="card-body">
                           <h3 class="text-xl font-bold">24/7 Services</h3>
@@ -107,7 +107,7 @@
                       </div>
                   </div>
                   <!-- Fast Delivery -->
-                  <div class="card bg-base-200 p-6 shadow-lg rounded-lg">
+                  <div class="bg-[#EFEBE3] card bg-base-200 p-6 shadow-lg rounded-lg">
                       <figure><img src="images/delivery.png" alt="Fast Delivery"></figure>
                       <div class="card-body">
                           <h3 class="text-xl font-bold">Fast Delivery</h3>
@@ -115,7 +115,7 @@
                       </div>
                   </div>
                   <!-- Healthy Products -->
-                  <div class="card bg-base-200 p-6 shadow-lg rounded-lg">
+                  <div class="bg-[#EFEBE3] card bg-base-200 p-6 shadow-lg rounded-lg">
                       <figure><img src="images/healthy.png" alt="Healthy Products"></figure>
                       <div class="card-body">
                           <h3 class="text-xl font-bold">Healthy Products</h3>
@@ -127,10 +127,10 @@
       </main>
 
        <!-- Arrival & Offers Section -->
-       <h2 class="text-3xl font-bold text-green-600 mt-10 mb-6">Arrival & Offers</h2>
+       <h2 class="container mx-auto text-3xl font-bold text-green-600 mt-10 mb-6">Arrival & Offers</h2>
        <div class="grid md:grid-cols-3 gap-6">
            <!-- Daawat Offer (Bigger Box) -->
-           <div class="card bg-green-900 text-white p-10 shadow-lg rounded-lg flex flex-row items-center justify-between md:col-span-2">
+           <div class="mx-auto card bg-green-900 text-white p-10 mb-20 shadow-lg rounded-lg flex flex-row items-center justify-between md:col-span-2">
                <div class="text-left">
                    <img src="images/dawat-logo.png" alt="Daawat Logo" class="mb-4 w-32">
                    <h3 class="text-2xl font-bold">Daawat The Finest</h3>
@@ -140,7 +140,7 @@
                <img src="images/dawat-mock-up.png" alt="Daawat Biryani Rice" class="ml-4 w-48">
            </div>
            <!-- India Gate Offer (Smaller Box) -->
-           <div class="card bg-blue-900 text-white p-6 shadow-lg rounded-lg flex flex-row items-center justify-between md:col-span-1">
+           <div class="mx-auto card bg-blue-900 text-white p-6 mb-20 shadow-lg rounded-lg flex flex-row items-center justify-between md:col-span-1">
                <div class="text-left">
                    <img src="images/india-gate-logo.png" alt="India Gate Logo" class="mb-4 w-24">
                    <h3 class="text-lg font-bold">India Gate</h3>
@@ -151,34 +151,53 @@
            </div>
        </div>
    </div>
-      <!-- footer Section -->
-       <footer>
-        <footer class="footer sm:footer-horizontal bg-green-500 text-base-content p-10">
-          <nav>
-            <img src="images/logo-footer.png" alt="">
-            <p class="text-white">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br>
-               friends</p>
-          </nav>
-          <nav class="text-white">
-            <a class="link link-hover">Product</a>
-            <a class="link link-hover">Service</a>
-            <a class="link link-hover">Contact Us</a>
-            
-          </nav>
-          <nav>
-            <h6 class="text-xl  text-white">Follow us</h6>
-            <div class="grid grid-flow-col gap-24">
-              <a>
-                <i class="fa-brands fa-facebook text-white text-5xl"></i>
-                <i class="fa-brands fa-instagram text-white text-5xl"></i>
-                <i class="fa-brands fa-linkedin text-white text-5xl"></i>
-                <i class="fa-brands fa-youtube text-white text-5xl"></i>
+      <!-- Get Grocery News -->
+<section class="relative -mb-16 z-10">
+  <div class=" bg-[#EFEBE3] p-10 rounded-lg shadow-lg flex flex-col md:flex-row items-center gap-6 w-11/12 max-w-5xl mx-auto relative">
+      <!-- Left: Image -->
+      <div class="flex-shrink-0">
+          <img src="images/vegetable-busket.png" alt="Grocery Basket" class="w-60 md:w-72">
+      </div>
+      
+      <!-- Right: Content -->
+      <div class="text-center md:text-left">
+          <h2 class="text-3xl font-bold text-gray-900 mb-2">Get Grocery News!</h2>
+          <p class="text-gray-700 mb-4">Exclusive training tips, tricks, product deals, and more.</p>
+          
+          <!-- Email Input Field -->
+          <div class="flex flex-col md:flex-row gap-3">
+              <input type="email" placeholder="Enter email..." class="input input-bordered w-full md:w-80">
+              <button class="btn btn-success px-6">Subscribe</button>
+          </div>
+      </div>
+  </div>
+</section>
 
-                
-              </a>
-            </div>
-          </nav>
-        </footer>
-       </footer>
+<!-- Footer Section -->
+<footer class="footer bg-green-500 text-base-content p-20 relative z-0">
+  <div class="w-11/12 max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start">
+      <nav>
+          <img src="images/logo-footer.png" alt="Nature's Platter Logo">
+          <p class="text-white">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
+      </nav>
+      <nav class="text-white">
+          <a class="link link-hover">Product</a>
+          <br>
+          <a class="link link-hover">Service</a>
+          <br>
+          <a class="link link-hover">Contact Us</a>
+      </nav>
+      <nav>
+          <h6 class="text-xl text-white">Follow us</h6>
+          <div class="grid grid-flow-col gap-6">
+            <i class="fa-brands fa-facebook text-white text-5xl"></i>
+            <i class="fa-brands fa-instagram text-white text-5xl"></i>
+            <i class="fa-brands fa-linkedin text-white text-5xl"></i>
+            <i class="fa-brands fa-youtube text-white text-5xl"></i>
+          </div>
+        </nav>
+    </div>
+</footer>
+
 </body>
 </html>
